@@ -1,0 +1,30 @@
+body {
+    background-color:ivory;
+    text-align: center;
+}
+h1 {
+    color: rgb(255, 255, 255);
+    background-color:steelblue;
+    border: 10px dotted rgb(54, 106, 149);
+
+  }
+  h2{
+    color:rgb(18, 135, 47);
+  }
+  img { 
+    width: 500px;
+    border: 20px groove rgb(84, 61, 10);
+
+
+}
+#first_paragraph{
+    font-weight:bold;
+    background-color:gold;
+    border: 10px dotted goldenrod;
+    }
+
+  p{
+    color:rgb(17, 9, 81);
+    padding:1px;
+    
+}
