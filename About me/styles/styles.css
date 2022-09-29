@@ -20,7 +20,7 @@ h1 {
 #first_paragraph{
     font-weight:bold;
     background-color:gold;
-    border: 10px dotted goldenrod;
+    border: 10px dotted rgb(234, 177, 33);
     }
 
   p{
