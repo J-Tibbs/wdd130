@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato&family=Delius:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+
+    --heading-font: "Bradley Hand", calibri, Lato;
+    --paragraph-font: "Delius", calibri, "Times New Roman";
+}
+
 #content{
     max-width:1600px;
     margin: 0 auto; 
@@ -5,6 +13,15 @@
 nav, a {
         text-align:center;
         text-decoration:none;
+}
+.icon{
+    padding-top: 10px;
+}
+#logo_link{
+    padding-top: 5px;
+}
+main section img{
+    box-sizing: border-box;
 }
 #hero-img{
     width: 100%;
@@ -30,9 +47,30 @@ main section{
                 
 body{
     background-color:#6D9DC5;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+ }
+ h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+
+ }
+ h2{
+    margin: 0;
+ }
+ .home-title{
+    font-size:2em;
+    margin-top: 10px;
+ }
+ p{
+    font-family: var(--paragraph-font);
+
  }
 header{
     background-color:#6189ceb9;
+}
+nav a{
+    padding: 35px;
 }
 nav a:hover{
     background-color: #80DED9;
@@ -40,21 +78,38 @@ nav a:hover{
 .book, .join{
     background-color:#AEECEF;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 
 }
+
 .book:hover, .join:hover{
     background-color:#80DED9;
 }
+.card-img{
+    border: 10px solid #000000;
+}
 .msg{
     background-color:#AEECEF;
-
+    line-height: 1.5em;
+    padding: 35px;
+}
+.msg p{
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
 }
 .logo{
     width:80px;
 }
 footer{
     background-color:#AEECEF;
-
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer p{
     font-size: 1.2em;
@@ -65,3 +120,6 @@ footer a{
 footer p a:hover {
     text-decoration: underline;
 }    
+footer .social img{
+    padding-top: 15px;
+}
