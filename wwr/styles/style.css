@@ -58,6 +58,7 @@ main section img{
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
+    background-color: #074d8247;
 }
 #hero-msg h1{
     text-align:center;
