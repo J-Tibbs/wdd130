@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round|Nunito|Poppins');
+
+
+
+:root{
+
+    --heading-font: "Varela Round", "Poppins", "sans serif";
+  --paragraph-font: "Nunito", "Poppins", "sans serif";
+}
+
+#content{
+        max-width:1600px;
+        margin: 0 auto; 
+}
+body{
+    margin: 0 auto;
+    background-color: #EAEBED;
+}
+nav, a {
+    font-size:150%;
+       font-family: var(--heading-font);
+        text-align:center;
+        text-decoration:none;
+}
+.icon{
+    padding-top: 10px;
+}
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+header{
+    background-color: #4c6085;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    
+}
+nav a{
+    padding: 35px;
+}
+nav a:hover{
+    background-color: #1A936F;
+}
+#hero{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
+    font-family: var(--heading-font);
+
+}
+#hero-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+img{
+    width: 100%;
+}
+#hero-msg{
+    text-align:center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    background-color: #074d8247;
+    color:white;
+
+}
+.messages{
+    font-family: var(--paragraph-font);
+
+}
+.messages h1{
+    font-family: var(--heading-font);
+
+}
+
+
+.comparison{
+    display:grid;
+    grid-template-columns: 1fr,1fr,1fr;
+    grid-template-rows: 1fr;
+    background-color: #1a936f52;
+    font-family: var(--paragraph-font);
+
+}
+.comparison h2{
+    font-family: var(--heading-font);
+
+}
+.unity{
+    grid-column:1/2;
+    border:#1A936F solid;
+    grid-row:1/1;
+}
+.unity h2{
+    border:#1A936F solid;
+    margin-top:0;
+
+
+    
+}
+.godot{
+    grid-template-columns: 2/3;
+    border: #1A936F solid;
+    grid-row:1/1;
+
+}
+.godot h2{
+    border:#1A936F solid;
+    margin-top:0;
+}
+
+
+
+
+footer{
+    color:#EAEBED;
+    background-color:#931227;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--heading-font);
+}
+footer p{
+    font-size: 1.2em;
+}
+footer a{
+    text-decoration: none;
+}
+footer p a:hover {
+    text-decoration: underline;
+    background-color:#B3263D;
+}    
+footer .social img{
+    padding-top: 15px;
+}
