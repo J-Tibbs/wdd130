@@ -81,14 +81,17 @@ img{
 
 }
 
-
+.centerGrid{
+    padding: 5%;
+}
 .comparison{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     font-family: var(--paragraph-font);
     text-align:center;
-    margin: 0 auto;
+    justify-items: center;
+    
 }
 .comparison h2{
     font-family: var(--heading-font);
@@ -99,6 +102,7 @@ img{
     border:#1A936F solid;
     grid-row:1/1;
     background-color: #1a936f52;
+    width:100%;
 
 }
 .unity h2{
@@ -113,16 +117,13 @@ img{
     border: #1A936F solid;
     grid-row:1/1;
     background-color: #1a936f52;
+    width: 100%;
 
 
 }
 .godot h2{
     border:#1A936F solid;
     margin-top:0;
-}
-.centerGrid{
-    display: inline-block;
-    
 }
 
 
