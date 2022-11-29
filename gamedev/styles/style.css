@@ -73,6 +73,7 @@ img{
 }
 .messages{
     font-family: var(--paragraph-font);
+    padding-left:30px;
 
 }
 .messages h1{
@@ -86,7 +87,8 @@ img{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     font-family: var(--paragraph-font);
-    
+    text-align:center;
+    margin: 0 auto;
 }
 .comparison h2{
     font-family: var(--heading-font);
@@ -118,8 +120,10 @@ img{
     border:#1A936F solid;
     margin-top:0;
 }
-
-
+.centerGrid{
+    display: inline-block;
+    
+}
 
 
 footer{
