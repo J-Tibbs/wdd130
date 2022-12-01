@@ -153,7 +153,6 @@ footer .social img{
 }
 
 
-/* This is for the second page*/
 
 #secondContent{
     max-width:1600px;
@@ -166,7 +165,7 @@ footer .social img{
     width: 80%;
 }
 .tutorialSection{
-    padding-left:30px
+    padding-left:30px;
 }
 .sectionText{
     font-family: var(--heading-font);
