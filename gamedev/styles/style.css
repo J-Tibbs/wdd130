@@ -7,7 +7,9 @@
     --heading-font: "Varela Round", "Poppins", "sans serif";
   --paragraph-font: "Nunito", "Poppins", "sans serif";
 }
-
+html{
+    width:100%;
+}
 #content{
         max-width:1600px;
         margin: 0 auto; 
