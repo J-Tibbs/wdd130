@@ -215,3 +215,41 @@ footer .social img{
     background-color: #69995D; /* Add a dark-grey background on hover */
     }
  
+.contentGrid{
+
+      font-family: var(--heading-font);
+      padding-left:30px;
+
+}
+.contentGrid a{
+ font-size:16px;   
+}
+.contentGrid a:hover{
+    text-decoration: underline;
+    color:#931227;
+}
+.firstPerson img{
+    box-shadow: 5px 5px 10px #21096f7a;
+    margin-left:30px;
+
+    grid-column:2/3;
+    width:90%;
+}
+.firstPerson p{
+    grid-column:1/2;
+    border-bottom:2px #1A936F solid;
+    line-height: 150%;
+
+    
+
+}
+.firstPerson h3{
+    grid-column:1/3;
+    text-align:center;
+}
+.firstPerson{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: var(--paragraph-font);
+
+}

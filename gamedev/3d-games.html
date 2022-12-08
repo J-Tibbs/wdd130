@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+
     <title>Game Dev | Home</title>
 </head>
 <body>
@@ -22,27 +24,36 @@
         </header>
 
     <main>
-        <h1>Starting out</h1>
-        <p>To start out, open up the hub and select create new project. From there, select 3D, name it and create the project.</p>
-        <h1> First Person Games</h1>
-        <h3>A first-person game is a game that has the perspective of the character. It can be almost any type of game, such as a platformer or a first person shooter. Examplse of these include Portal, first person shooter games, and almost every VR games.</h3>
-        <div class = "firstperson">
+        <div class = "contentGrid">
+        <div class = "firstPerson">
+            <h3>A first-person game is a game that has the perspective of the character. It can be almost any type of game, such as a platformer or a first person shooter. Examples of these include Portal, first person shooter games, and almost every VR games.</h3>
+
+            <p>To start out, open up the hub and select create new project. From there, select 3D, name it and create the project.</p>
+
             <p>
-                To start off this project, open the Unity Hub and click new project. Make sure that 3D is selected for the type of game. From here, name the project what you want and click create project. Here you will see your workspace. To start, we right click the hierarchy and create a 3d object. We will go with the capsule. We will need to add a rigidbody component to it. Within that rigidbody, we will need to freeze the x, y, and z rotation. From here, we will also want to create a cube. This will be our ground. We can change the scale to fit under the player. We will need to move the camera up to face the character. In order to texture these, take the picture you want as the texture and drag it directly onto the item.</p>
+                To start off this project, open the Unity Hub and click new project. Make sure that 3D is selected for the type of game. From here, name the project what you want and click create project. Here you will see your workspace. To start, we right click the hierarchy and create a 3d object. We will go with the capsule. We will need to add a rigidbody component to it. Within that rigidbody, we will need to freeze the x, y, and z rotation. You'll also want to make sure interpolate is set to interpolate and collision detection is set to discrete. From here, we will also want to create a cube. This will be our ground. We can change the scale to fit under the player. We will need to move the camera up to face the character. In order to texture these, take the picture you want as the texture and drag it directly onto the item.</p>
             <img src = "images/Game Example.png" alt = "Example of the game">
-            <p>In order to have the camera be in the person, we do just that. Move the camera into the head of the person at the desired height.</p>
-            <p>In order to add movement we add a script to the character. In this script, we will give the character the ability to move. This code has been used from a helper online. Here is a link to this other site.<a href="https://www.folkstalk.com/tech/unity-player-movement-script-3d-with-code-examples/">Using other people's examples is very helpful within programming.</a></a></p>
-            <img src = "images/3dGameCode.png" alt = "Image of the code">
-            <p>This is best explained on the site mentioned.</p>
-        <h1> Third-Person Games</h1>
-        <h3>A third-person game is a game where the character is followed from the outside of the person. These games are like Breath of the Wild, Hades, and Horizon Zero Dawn.</h3>
-        <div class = "thirdperson">
-        <p> </p>
+            <p>Click on the ground cube and open up layers in the inspector. Click on create new layer and make one labeled "ground". Go back to the cube inspector and change the layer to the new ground layer. Anything you want to be the ground needs to have this layer on it.</p>
+            <p>In order to add movement we add a script to the character. Create a script for your player and camera. In this script, we will give the character the ability to move. This code has been used from a another game developer online. Here is a link to their github for the code. <a href="https://github.com/DaniDevy/FPS_Movement_Rigidbody">Using other people's examples is very helpful within programming.</a></p>
+            <p>Copy the player movement script over to the script we created for the character, make sure to rename the title at the top of the code. Save it and go back to the editor. In the hier archy, create a new empty object and label it "camera". Put the main camera into this object within the hierarchy. </p>
+            <p>Click on the player and you should see a new section.</p>
+            <img src = "images/NewSection.png" alt = "The new seciton in the editor">
+            <p>Under the player capsule, we will need to create two more empty objects. Label one "orientation" and put it within the player. Label the other "head" and set it up where you would want the camera to be. Put both of these objects in the character on the hierarchy.</p>
+            <img src = "images/Hierarchy.png" alt = "Hierarchy after creating these objects">
+            <p>Go back the the player's new section. Move the empty camera object with the main camera under it into the spot for camera. Put the new orientation object into the orientation section. This is done just through dragging it into the open space. Click the drop down menu for ground and click the ground layer we made earlier. Open the script we made for the camera and copy the move camera script from the website. Make sure to label the top of the script to match the name you gave your script. Give the script to the camera object that holds the main camera. From here, you can drag the "head" object you made into the script section.</p>
+                <p> Click play to test it out. Feel free to move the sliders around to what you want them to be.</p>
+            <p>From there, we need to make a physics material. In the files section, right click it, go under create and find physics material. </p>
+            <img src = "images/Physics material.png" alt = "Where to find physics material">
+            <p>Change both frictions to be 0. Go to any ground blocks you've made and add the physics material to them. This allows you to slide and move better.</p>
+            <p>Finally, add blocks throughout your level to practice the movement with. These are all the basics for making a 3d first person game.</p>
+
+
+
 
 
         </div>
 
-
+    </div>
 
     </main>
 
